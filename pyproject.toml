@@ -1,0 +1,20 @@
+[project]
+name = "clipclean-local"
+version = "0.3.0"
+description = "Locate a fixed advertisement inside local video files"
+requires-python = ">=3.11"
+
+[project.scripts]
+adskip = "adskip.cli:main"
+clipclean = "adskip.cli:main"
+
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
